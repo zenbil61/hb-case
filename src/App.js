@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react';
+import { BrowserRouter as Router, Switch, Route }from "react-router-dom";
+import HomeView from './views/Home'
+import CreateView from './views/Create'
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './app.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+          <Switch>
+            <Route path="/" exact>
+              <HomeView />
+            </Route>
+            <Route path="/create" exact>
+              <CreateView />
+            </Route>
+          </Switch>
+      </Router>
+
+      <ToastContainer position="top-center" autoClose={2000} hideProgressBar={true} />
     </div>
   );
 }

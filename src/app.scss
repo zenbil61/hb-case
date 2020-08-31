@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import '_variables';
+@import '_mixins';
+
+body {
+    color:$dark;
+    font-family: $primary-font;   
+    margin: 0;
+    padding: 0;
+
+    h1, h2, h3, h4, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    input:focus,
+    select:focus,
+    button:focus {
+        outline: 0;
+    }
+    
+}
+
+// toastify overrided
+.Toastify__toast--default{
+    background: #ddf9d3;
+    padding: 20px 40px;
+    font-size:25px;
+    border-radius: 10px;
+    color:#87b37e;
+    border:1.5px solid #87b37e;
+    box-shadow:0px 0px 10px 0px  #87b37e;
+    text-align: center;
+    .Toastify__close-button {
+        display: none;
+    }
+}
+
+.App {
+    @include flex-middle;
+
+    height: 100vh;;
+    .container {
+        width: 450px;
+    }
+    .line {
+        background: $primary;
+        height: 3px;
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+
+

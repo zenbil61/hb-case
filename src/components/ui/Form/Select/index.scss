@@ -1,0 +1,13 @@
+@import '_variables';
+
+select {
+    height: 30px;
+    padding: 5px 20px;
+    background: $primary-medium;
+    border:2px solid $primary;
+    border-radius: 5px;
+    option {
+        background: red;
+    } 
+
+}

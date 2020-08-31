@@ -1,0 +1,53 @@
+@import '_variables';
+@import '_mixins';
+
+
+.dialog {
+    @include flex-middle;
+    @include position-full;
+    z-index:99;
+    position: fixed;
+    font-size:22px;
+    &-wrapper {
+        z-index: 999;
+        min-width: 400px;
+    }
+
+    &-header {
+        background: $dark;  
+        color:#fff;
+        padding: 10px 20px;
+        font-size:20px;
+
+        span:last-child {
+            float: right;
+        }
+    }
+    &-content {
+        text-align: center;
+        padding: 20px;
+        background:$primary;  
+    }
+    &-footer {
+        padding: 20px;
+        text-align: center;
+        background:$primary;  
+
+        .button {
+            margin: 0px 10px;
+        }
+    }
+
+
+    &-overlay { 
+        @include position-full;
+        z-index: 998;
+        position: absolute;
+        opacity: 0.7;
+        background: $dark ;
+
+    }
+    .close-icon {
+        cursor: pointer;
+    }
+}

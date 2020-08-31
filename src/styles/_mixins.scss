@@ -1,0 +1,12 @@
+@mixin flex-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin position-full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

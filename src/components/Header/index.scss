@@ -1,0 +1,22 @@
+@import '_variables';
+@import '_mixins';
+
+header {
+    @include flex-middle;
+    box-sizing: border-box;
+    background: $primary-medium;
+    width: 100%;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    color: $dark;
+    a {
+        color:$dark;
+        width: 100%;
+        .content {
+            line-height: 80px;
+            font-size:35px;
+            text-align: center;
+        }
+    }
+  
+}

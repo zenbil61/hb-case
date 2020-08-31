@@ -1,0 +1,25 @@
+@import '_variables';
+@import '_mixins';
+
+.thumbnail {
+    @include flex-middle;
+    flex-direction: column;
+
+    text-align: center;
+    border-radius: 10px;
+    border:1px solid $dark-medium;
+    background: #ececec;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 2px 0px $primary-medium;
+
+
+
+    &-title {
+        line-height: 45px;
+        font-size: 55px;
+    }
+    &-description {
+        font-size: 15px;
+    }
+} 

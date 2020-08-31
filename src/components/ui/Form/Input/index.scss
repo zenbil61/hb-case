@@ -1,0 +1,23 @@
+@import '_variables';
+
+.form-item {
+    margin-top:20px;
+    label {
+        display: block;
+        margin-bottom:10px;
+    } 
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border:1px solid $dark;
+
+        ::placeholder {
+            color:$primary-medium;
+        }
+    }
+}

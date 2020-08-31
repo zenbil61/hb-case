@@ -1,0 +1,12 @@
+@import '_variables';
+
+.button {
+    cursor: pointer;
+    background: $dark;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border:0px;
+    font-size: 20px;
+    font-weight: 500;
+}
